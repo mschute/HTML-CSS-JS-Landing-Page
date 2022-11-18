@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      a {
+        color: #9f9262;
+      }
+
+      a:hover {
+        color: rgb(73, 62, 16);
+      }
+
+      body {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(137, 193, 222, 1) 50%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        color: #0e1b30;
+        font-family: forma-djr-micro, sans-serif;
+        text-align: center;
+      }
+
+      button {
+        background-color: #c6bb8d;
+        border: 1px solid rgba(73, 62, 16, 0.6);
+        border-radius: 8px;
+        box-shadow: inset -2px -2px 5px rgba(73, 62, 16, 0.2),
+          5px 5px 20px rgba(14, 27, 48, 0.1);
+        color: rgb(73, 62, 16);
+        font-weight: 600;
+        font-size: 16px;
+        margin: 20px;
+        padding: 15px 25px;
+        transition: 150ms ease-in-out;
+      }
+
+      button:hover {
+        background-color: #fcfdff;
+        cursor: pointer;
+      }
+
+      div {
+        background-color: #fcfdff;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px rgba(14, 27, 48, 0.1);
+        margin: 80px auto 30px auto;
+        max-width: 700px;
+        padding: 30px 40px;
+      }
+
+      h1,
+      h3 {
+        color: #6c633e;
+      }
+
+      h2,
+      h4 {
+        color: #9f9262;
+        line-height: 20px;
+      }
+
+      h1 {
+        padding: 10px;
+      }
+
+      h2 {
+        font-family: cursive;
+        margin: 10px;
+      }
+
+      h3 {
+        padding: 10px;
+      }
+
+      h4 {
+        margin: 10px 0px 10px 0px;
+      }
+
+      img {
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px rgba(14, 27, 48, 0.1);
+        margin: 20px;
+        max-width: 60%;
+      }
+
+      ul {
+        margin: 0px 0px 20px 0px;
+        padding: 0px 20px;
+        text-align: left;
+      }
+
+      .artichoke_ingredients li:nth-child(even),
+      .garnish_ingredients li:nth-child(even),
+      .rice_ingredients li:nth-child(even),
+      .tahini_ingredients li:nth-child(even) {
+        color: rgba(14, 27, 48, 0.5);
+      }
+
+      .closing {
+        margin: 20px;
+      }
+
+      .coder {
+        font-family: monospace;
+        margin: 30px;
+      }
+
+      .description {
+        text-align: justify;
+      }
+
+      .eats {
+        color: #9f9262;
+        font-weight: 600;
+      }
+
+      .end_description {
+        font-weight: bold;
+        text-align: justify;
+      }
+
+      .instructions {
+        list-style: none;
+        padding: 0px;
+        text-align: justify;
+      }
+
+      .list_header {
+        font-weight: bold;
+        margin: 0px;
+        padding: 0px 0px 10px 0px;
+        text-align: left;
+      }
+    </style>
+    <div>
+      <h1>Whole Artichoke with Tahini Dip and Chickpea Rice</h1>
+      <h2>Veganly Delicious</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/941/original/Artichoke_Tahini_Dressing_Chickpea_Rice.png?1661780644"
+        alt="Whole Artichoke with Tahini Dip and Chickpea Rice"
+      />
+      <br />
+      <p class="description">
+        This dish is very special to my partner and I. In fact, it is his recipe
+        that I have included on this page. We both loved artichokes to begin
+        with and when we first when vegan, it became one of our go-to recipes.
+        Protein from the chickpeas and tahini, wonderful flavors from the cumin
+        and coriander and a bit of bite from the lemon. Don't forget artichokes
+        are an <em>excellent</em> source of antioxidants, supports heart health,
+        helps lower LDL cholesterol, improves liver health, promotes bone health
+        and help protect against cancer! We always left this meal feeling full
+        and happy. When going vegan, it is important to find meals you love and
+        as such, we wanted to share one of our favourites with the world.
+        <span class="eats">Happy eating.</span> 😊
+      </p>
+
+      <hr />
+      <h3>Ingredients</h3>
+      <h4 class="list_header">Artichokes</h4>
+      <ul class="artichoke_ingredients">
+        <li>1 Artichoke per person</li>
+        <li>1 cube (500ml) vegetable stock</li>
+        <li>2 garlic cloves</li>
+      </ul>
+
+      <h4 class="list_header">Chickpea Rice</h4>
+      <ul class="rice_ingredients">
+        <li>1-2 yellow onion(s)</li>
+        <li>1-2 cups of brown rice</li>
+        <li>1/2 tbsp olive oil</li>
+        <li>1 can chickpeas</li>
+        <li>2 tsp dried coriander</li>
+        <li>2 tsp cumin</li>
+        <li>2 tsp turmeric</li>
+        <li>Salt and pepper (to taste)</li>
+      </ul>
+
+      <h4 class="list_header">Tahini dip</h4>
+      <ul class="tahini_ingredients">
+        <li>Tahini paste</li>
+        <li>2-4 Garlic cloves</li>
+        <li>1 cube (500ml) vegetable stock</li>
+        <li>Juice of 1 lemon</li>
+        <li>Salt and pepper (to taste)</li>
+      </ul>
+
+      <h4 class="list_header">Garnish</h4>
+      <ul class="garnish_ingredients">
+        <li>1 tsp olive oil</li>
+        <li>1 tsp smoked paprika</li>
+        <li>1 tsp black sesame seeds</li>
+      </ul>
+
+      <hr />
+      <h3>Instructions</h3>
+
+      <ul class="instructions">
+        <li>
+          <h4>Artichokes</h4>
+          Rinse the artichokes, remove stem and some small outer leaves and
+          place in a large saucepan bottom-down. Add 2 garlic cloves and some
+          water to the pan so the artichokes are sitting in 1-1.5 inches of
+          water. Add 1 stock cube and bring to boil then cover and leave on
+          lowest heat for 45 minutes.
+        </li>
+        <br />
+        <li>
+          <h4>Chickpea and Onion</h4>
+          While the artichokes are cooking, roughly chop the onion and add to a
+          large pan with a little olive oil, stirring as not to burn the onion.
+          Reduce the heat and add the chickpeas (including chickpea water from
+          the can) and the other stock cube. Simmer on low heat while you
+          prepare the rice.
+        </li>
+        <br />
+        <li>
+          <h4>Rice</h4>
+          Use 2 cups of water for 1 cup of rice, or 3 cups of water for 2 cups
+          of rice. Bring the water to a boil in a saucepan and then add the rice
+          once it starts boiling. Stir for a minute so the rice doesn’t stick,
+          then cover and put on the lowest flame. Turn the heat off as soon as
+          the water is gone from the surface of the rice then
+          <strong>leave the lid on</strong> for a further 5 minutes. Then stir
+          the chickpeas, onion, turmeric, cumin, coriander, salt and pepper to
+          taste into the rice.
+        </li>
+        <br />
+        <li>
+          <h4>Tahini</h4>
+          Put some tahini paste in a mixing bowl. Then add 2-4 minced garlic
+          cloves, lemon, salt and pepper to taste. Then add water a little at a
+          time till the sauce is at your desired thickness. For extra tasty
+          tahini, use the artichoke stock from the big saucepan.
+        </li>
+        <br />
+        <li>
+          <h4>Serving</h4>
+          Serve the artichoke on a bed of chickpea and onion rice, drizzle on
+          the tahini and serve with a bowl of tahini on the side. For extra
+          pizazz, sprinkle the artichoke with black sesame seeds and a
+          smattering of smoked paprika and a drizzle of olive oil. Chuck on a
+          handful of pomegranate seeds if you have some prepared.
+        </li>
+        <br />
+        <li>
+          <h4>Eating</h4>
+          Eat by dipping the artichoke leaves into the tahini and scraping off
+          the meat of the leaves with your teeth. Discard the used leaves in a
+          separate bowl and compost later. When you get to the heart, remove the
+          hairs with a spoon or your fingers and enjoy the artichoke
+          heart/bottom.
+        </li>
+      </ul>
+
+      <button>Buy artichokes</button>
+
+      <p class="closing">
+        To find out more about the
+        <a
+          href="https://www.organicfacts.net/health-benefits/other/health-benefits-of-artichokes.html"
+          target="_blank"
+        >
+          wonders of artichokes...
+        </a>
+      </p>
+    </div>
+    <p class="coder">Coded by <strong>Marta Unterschute</strong> 👩‍💻</p>
+
+    <script>
+      function getArtichokes() {
+        let artichokes = prompt("How many artichokes would you like to buy?");
+        let numArtichokes = Number(artichokes);
+        return numArtichokes;
+      }
+
+      function assessArtichokes() {
+        let artichoke = getArtichokes();
+        if (artichoke > 0) {
+          sendArtichokes(artichoke);
+        } else {
+          alert(`You cannot buy ${artichoke} artichokes, you silly!`);
+        }
+      }
+
+      function askAddress() {
+        let address = prompt("What is your address?");
+        return address;
+      }
+
+      function sendArtichokes(artichokes) {
+        if (artichokes == 1) {
+          alert(
+            `You will be sent ${artichokes} artichoke to ${askAddress()} shortly!`
+          );
+        } else {
+          alert(
+            `You will be sent ${artichokes} artichokes to ${askAddress()} shortly!`
+          );
+        }
+      }
+
+      let clickButton = document.querySelector("button");
+
+      clickButton.addEventListener("click", assessArtichokes);
+    </script>
+  </body>
+</html>
